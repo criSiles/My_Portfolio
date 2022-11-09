@@ -1,0 +1,19 @@
+.column {
+    float:left;
+    width: fit-content;
+    padding: 5px;
+    height: fit-content;
+}
+
+.row:after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+ @media screen and (max-width: 600px) {
+    .column {
+        width: auto;
+        border: 5px none solid;
+    }
+ }
