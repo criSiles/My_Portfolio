@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristina's portfolio</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body style="font-family: sans-serif">
+    <nav class="navbar">
+      <img class="logo" src="cris.png" alt="Cristina's portfolio" />
+      <ul class="menu">
+        <li>
+          <a class="link" href="#">Projects</a>
+        </li>
+        <li>
+          <a class="link" href="#">Skills</a>
+        </li>
+        <li>
+          <a class="link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div></div>
+    <h2>Cristina Siles Vega</h2>
+    <p>
+      Hi! I'm Cristina, I'm from Malaga but I've been living in Barcelona since
+      2020. I studied a chemistry degree but recently, I decided to change my
+      professional career into the IT world. I was starting to study a bit of Python when a friend told me about the
+      Glovo-Keepcoding scholarship. I decided to apply and finally, I got accepted!
+      I'm just starting to know about Web programming but it seems like an
+      interesting future where I would like to go.
+    </p>
+
+    <h2>My skills</h2>
+    <div class="row">
+      <div class="column">
+        <label for="Js">Javascript</label>
+        <progress value="-100" max="100"></progress>
+      </div>
+      <div class="column">
+        <label for="css">CSS</label>
+        <progress value="5" max="100"></progress>
+      </div>
+      <div class="column">
+        <label for="html">HTML</label>
+        <progress value="20" max="100"></progress>
+      </div>
+      <div class="column">
+        <label for="python">Python</label>
+        <progress value="40" max="100"></progress>
+      </div>
+    </div>
+    <p></p>
+    <form>
+      <div class="row">
+        <div class="column">
+          <label for="name"><b>Name</b></label>
+          <input
+            required
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Write your name"
+          />
+        </div>
+        <div class="column">
+          <label for="surname"><b>Surname</b></label>
+          <input
+            required
+            id="surname"
+            name="surname"
+            type="text"
+            placeholder="Write your surname"
+          />
+        </div>
+        <div class="column">
+          <label for="phone"><b>Phone</b></label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Write your phone number"
+          />
+        </div>
+        <div class="column">
+          <label for="account"><b>Github username</b></label>
+          <input
+            type="git"
+            id="account"
+            name="account"
+            placeholder="Format (@<username>)"
+          />
+        </div>
+      </div>
+
+      <block>
+        <h3>How did you know me?</h3>
+        <p>
+          <label for="uni">University</label>
+          <input required id="uni" type="radio" name="knowMe" value="uni" />
+        </p>
+        <p>
+          <label for="keepcoding">Keepcoding kick-off</label>
+          <input
+            required
+            id="keepcoding"
+            type="radio"
+            name="knowMe"
+            value="keepcoding"
+          />
+        </p>
+        <p>
+          <label for="cole">School</label>
+          <input
+            required
+            id="school"
+            type="radio"
+            name="knowMe"
+            value="school"
+          />
+        </p>
+        <p>
+          <label for="github">Github</label>
+          <input
+            required
+            id="github"
+            type="radio"
+            name="knowMe"
+            value="github"
+          />
+        </p>
+      </block>
+
+      <label><b> More information</b></label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        maxlength="180"
+        placeholder="Ask me more"
+      />
+      <div>
+        <input type="submit" value="Send" />
+      </div>
+    </form>
+
+    <footer>
+      <a href="https://www.linkedin.com/in/cristina-siles-vega/"
+        >Visit my Linkedin page</a
+      >
+      <a href="https://github.com/criSiles"
+        >Visit my Github account</a
+    </footer>
+  </body>
+</html>
