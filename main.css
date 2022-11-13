@@ -1,19 +1,152 @@
-.column {
-    float:left;
-    width: fit-content;
-    padding: 5px;
-    height: fit-content;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.row:after {
-    content: "";
+.skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding-right: 5rem;
+  gap: 2rem;
+}
+
+.menu {
+  display: none
+}
+
+.menu a {
+  padding: 1rem;
+}
+
+.general_menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding-right: 7rem;
+  gap: 2rem;
+}
+
+/* Class for all text */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: justify;
+  margin-left: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  height: 3rem;
+  background-color: #faebd7;
+}
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.list {
+  /* Hide bullets */
+  list-style-type: none;
+  row-gap: 4px;
+}
+
+.inputText {
+  width: 100%;
+  height: 2rem;
+  border: 1px solid #faebd7;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+/* Hover effect */
+.link:hover {
+  background-color: #fad19c;
+}
+
+nav.navbar img.logo {
+  max-height: 3rem;
+  width: auto;
+
+  /*Put the logo on the left*/
+  order: -1;
+}
+
+.link {
+  /* Remove underline in links */
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+/* Medium screens */
+@media all and (min-width: 450px) {
+  .menu {
     display: flex;
-    clear: both;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding-right: 5rem;
+    gap: 2rem;
+  }
+
+  .general_menu {
+    display: none;
+  }
 }
 
- @media screen and (max-width: 600px) {
-    .column {
-        width: auto;
-        border: 5px none solid;
-    }
- }
+/* Large screens */
+@media all and (min-width: 720px) {
+  .general_menu {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding-right: 5rem;
+    gap: 2rem;
+  }
+}
+
+.fa {
+  padding: 0.5rem;
+  width: 2rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 3rem 1rem;
+  border-radius: 20%;
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  -ms-border-radius: 20%;
+  -o-border-radius: 20%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+
+}

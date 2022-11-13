@@ -3,59 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cristina's portfolio</title>
     <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
-  <body style="font-family: sans-serif">
-    <nav class="navbar">
-      <img class="logo" src="cris.png" alt="Cristina's portfolio" />
-      <ul class="menu">
-        <li>
-          <a class="link" href="#">Projects</a>
-        </li>
-        <li>
-          <a class="link" href="#">Skills</a>
-        </li>
-        <li>
-          <a class="link" href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <div></div>
-    <h2>Cristina Siles Vega</h2>
-    <p>
-      Hi! I'm Cristina, I'm from Malaga but I've been living in Barcelona since
-      2020. I studied a chemistry degree but recently, I decided to change my
-      professional career into the IT world. I was starting to study a bit of Python when a friend told me about the
-      Glovo-Keepcoding scholarship. I decided to apply and finally, I got accepted!
-      I'm just starting to know about Web programming but it seems like an
-      interesting future where I would like to go.
-    </p>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <img class="logo" src="Cristina.png" alt="Cristina's portfolio" />
+        <ul class="list menu">
+          <li><a class="link" href="#">Projects</a></li>
+          <li><a class="link" href="#">Skills</a></li>
+          <li><a class="link" href="#">Contact</a></li>
+        </ul>
+        <ul class="list general_menu">
+          <li><a class="link" href="#">Menu</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h2>My skills</h2>
-    <div class="row">
-      <div class="column">
-        <label for="Js">Javascript</label>
-        <progress value="-100" max="100"></progress>
-      </div>
-      <div class="column">
-        <label for="css">CSS</label>
-        <progress value="5" max="100"></progress>
-      </div>
-      <div class="column">
-        <label for="html">HTML</label>
-        <progress value="20" max="100"></progress>
-      </div>
-      <div class="column">
-        <label for="python">Python</label>
-        <progress value="40" max="100"></progress>
-      </div>
+    <br />
+    <div>
+      <h2 class="text">Cristina Siles Vega</h2>
+      <p class="text">
+        Hi! I'm Cristina, I'm from Malaga but I've been living in Barcelona
+        since 2020. I studied a chemistry degree but recently, I decided to
+        change my professional career into the IT world. I was starting to study
+        a bit of Python when a University told me about the Glovo-Keepcoding
+        scholarship. I decided to apply and finally, I got accepted! I'm just
+        starting to know about Web programming but it seems like an interesting
+        future where I would like to go.
+      </p>
     </div>
-    <p></p>
-    <form>
-      <div class="row">
+
+    <h2 class="text">My skills</h2>
+    <ul class="list skills">
+      <li>
+        <label>
+          Javascript <br /><progress value="0" max="100"></progress></label
+        >
+      </li>
+      <li>
+        <label
+          >CSS <br />
+          <progress value="2" max="100"></progress></label
+        >
+      </li>
+      <li>
+        <label>HTML <br /><progress value="8" max="100"></progress></label>
+      </li>
+      <li>
+        <label
+          >Python <br /><progress value="15" max="100"></progress></label
+        >
+      </li>
+    </ul>
+    <h2>Contact</h2>
+    <form action="form-completed.html" method="post" novalidate></form>
+      <ul class="list form">
         <div class="column">
           <label for="name"><b>Name</b></label>
           <input
@@ -94,65 +104,47 @@
             placeholder="Format (@<username>)"
           />
         </div>
-      </div>
+      </ul>
 
       <block>
         <h3>How did you know me?</h3>
-        <p>
-          <label for="uni">University</label>
-          <input required id="uni" type="radio" name="knowMe" value="uni" />
-        </p>
-        <p>
-          <label for="keepcoding">Keepcoding kick-off</label>
-          <input
-            required
-            id="keepcoding"
-            type="radio"
-            name="knowMe"
-            value="keepcoding"
-          />
-        </p>
-        <p>
-          <label for="cole">School</label>
-          <input
-            required
-            id="school"
-            type="radio"
-            name="knowMe"
-            value="school"
-          />
-        </p>
-        <p>
-          <label for="github">Github</label>
-          <input
-            required
-            id="github"
-            type="radio"
-            name="knowMe"
-            value="github"
-          />
-        </p>
+        <ul class="list form">
+          <li>
+            <input type="radio" id="University" name="University" value="University" />
+            <label for="University">University</label>
+          </li>
+          <li>
+            <input type="radio" id="Keepcoding kick-off" name="Keepcoding kick-off" value="Keepcoding kick-off" />
+            <label for="Keepcoding kick-off">Keepcoding kick-off media</label>
+          </li>
+          <li>
+            <input type="radio" id="School" name="School" value="School" />
+            <label for="School">School</label>
+          </li>
+          <li>
+            <input type="radio" id="Github" name="Github" value="Github" />
+            <label for="Github">Github</label>
+          </li>
       </block>
-
-      <label><b> More information</b></label>
-      <input
-        type="text"
-        id="username"
-        name="username"
-        maxlength="180"
-        placeholder="Ask me more"
-      />
+      <br />
+      <textarea
+        class="inputText"
+        rows="5"
+        cols="80"
+        enctype="text/plain"
+        placeholder="Ask me more."
+      ></textarea>
       <div>
-        <input type="submit" value="Send" />
+        <input type="submit" value="Send"/>
       </div>
     </form>
 
-    <footer>
-      <a href="https://www.linkedin.com/in/cristina-siles-vega/"
-        >Visit my Linkedin page</a
-      >
-      <a href="https://github.com/criSiles"
-        >Visit my Github account</a
+    <footer class="footer">
+      <a href="https://github.com/criSiles" class="fa fa-github"></a>
+      <a
+        href="https://www.linkedin.com/in/cristina-siles-vega/"
+        class="fa fa-linkedin"
+      ></a>
     </footer>
   </body>
 </html>
